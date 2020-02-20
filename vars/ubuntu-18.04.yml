@@ -15,8 +15,8 @@
 # limitations under the License.
 
 _apt:
-    - { state: "latest", name: "g++" }
-    - { state: "latest", name: "gcc" }
-    - { state: "latest", name: "libc6-dev" }
-    - { state: "latest", name: "make" }
-    - { state: "latest", name: "pkg-config" }
+  - { state: "latest", name: "g++" }
+  - { state: "latest", name: "gcc" }
+  - { state: "latest", name: "libc6-dev" }
+  - { state: "latest", name: "make" }
+  - { state: "latest", name: "pkg-config" }
