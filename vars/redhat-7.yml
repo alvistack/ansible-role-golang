@@ -15,8 +15,8 @@
 # limitations under the License.
 
 _yum:
-    - { state: "latest", name: "gcc" }
-    - { state: "latest", name: "gcc-c++" }
-    - { state: "latest", name: "glibc-devel" }
-    - { state: "latest", name: "make" }
-    - { state: "latest", name: "pkgconfig" }
+  - { state: "latest", name: "gcc" }
+  - { state: "latest", name: "gcc-c++" }
+  - { state: "latest", name: "glibc-devel" }
+  - { state: "latest", name: "make" }
+  - { state: "latest", name: "pkgconfig" }

@@ -81,7 +81,7 @@
     rm -rf /usr/local/go \
       && mkdir -p /usr/local/go
     cd /usr/local/go
-    TMP_DIR="`mktemp -d`" \
+    TMP_DIR="$(mktemp -d)" \
       && tar -zx -C $TMP_DIR -f {{ golang_download.dest }} \
       && chown -Rf root:root $TMP_DIR/go \
       && cp -rfT $TMP_DIR/go . \
