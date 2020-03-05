@@ -14,12 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_golang_download:
-  "1.14":
-    url: "https://dl.google.com/go/go1.14.linux-amd64.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/go1.14.linux-amd64.tar.gz"
-    checksum: "sha1:b449f1b0daf8435cd25387901b296eeacd115d38"
-  "1.13.8":
-    url: "https://dl.google.com/go/go1.13.8.linux-amd64.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/go1.13.8.linux-amd64.tar.gz"
-    checksum: "sha1:9798f7bb36b780585966e7d0938a7eb954d77f15"
+- hosts: all
+  remote_user: root
+  become: true
+  tasks:
+    - include_role:
+        name: python
+
+    - include_role:
+        name: golang
