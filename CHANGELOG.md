@@ -5,6 +5,7 @@
 ### Major Changes
 
   - Upgrade minimal Molecule support to 3.0.2
+  - Support CentOS/RHEL 8
 
 ## 4.2.0 - 2020-02-20
 
