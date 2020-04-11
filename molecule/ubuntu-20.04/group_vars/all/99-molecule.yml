@@ -13,9 +13,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-# Go version.
-golang_version: "1.14.2"
-
-# Go download details.
-golang_download: "{{ _golang_download[golang_version] }}"
