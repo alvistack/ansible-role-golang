@@ -20,6 +20,8 @@
   tasks:
     - include_role:
         name: python
+      tags: python
 
     - include_role:
         name: golang
+      tags: golang
