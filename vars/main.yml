@@ -15,6 +15,10 @@
 # limitations under the License.
 
 _golang_download:
+  "1.14.5":
+    url: "https://dl.google.com/go/go1.14.5.linux-amd64.tar.gz"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/go1.14.5.linux-amd64.tar.gz"
+    checksum: "sha1:48fb087a093f0efaad4bf1c1f93bf8aae477f661"
   "1.14.4":
     url: "https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/go1.14.4.linux-amd64.tar.gz"
@@ -23,10 +27,10 @@ _golang_download:
     url: "https://dl.google.com/go/go1.14.3.linux-amd64.tar.gz"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/go1.14.3.linux-amd64.tar.gz"
     checksum: "sha1:27576c9e0bd40ed98c14404a9ac83678a63bc000"
-  "1.14.2":
-    url: "https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/go1.14.2.linux-amd64.tar.gz"
-    checksum: "sha1:ebef065e4d35572af5b03e2be957a9c6c5063b38"
+  "1.13.13":
+    url: "https://dl.google.com/go/go1.13.13.linux-amd64.tar.gz"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/go1.13.13.linux-amd64.tar.gz"
+    checksum: "sha1:176884879058fe1e81b895d8ca6289f0aa022b68"
   "1.13.12":
     url: "https://dl.google.com/go/go1.13.12.linux-amd64.tar.gz"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/go1.13.12.linux-amd64.tar.gz"
@@ -35,7 +39,3 @@ _golang_download:
     url: "https://dl.google.com/go/go1.13.11.linux-amd64.tar.gz"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/go1.13.11.linux-amd64.tar.gz"
     checksum: "sha1:0eb553a5fb83c59291a21f208c867cc36f7443be"
-  "1.13.10":
-    url: "https://dl.google.com/go/go1.13.10.linux-amd64.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/go1.13.10.linux-amd64.tar.gz"
-    checksum: "sha1:b66610c83f354f8560a80b90c31f9b89845b0d13"
