@@ -16,7 +16,6 @@
 
 - name: include default variables
   include_vars: "../vars/main.yml"
-  tags: golang
 
 - name: include release specific variables
   include_vars: "{{ lookup('first_found', _params) }}"
@@ -31,7 +30,6 @@
       paths:
         - "../vars"
   ignore_errors: true
-  tags: golang
 
 - name: include release specific tasks
   include_tasks: "{{ lookup('first_found', _params) }}"
@@ -46,7 +44,6 @@
       paths:
         - "."
   ignore_errors: true
-  tags: golang
 
 - name: prepare directories
   file:
@@ -59,7 +56,6 @@
     - { dest: "/usr/local/bin" }
     - { dest: "/usr/local/go" }
     - { dest: "{{ golang_download.dest | dirname }}" }
-  tags: golang
 
 - name: download archive
   vars:
@@ -74,7 +70,6 @@
     - "{{ golang_download }}"
   register: get_url_result
   until: get_url_result is succeeded
-  tags: golang
 
 - name: unarchive package
   shell: |
@@ -92,7 +87,6 @@
   args:
     executable: "/bin/bash"
   when: get_url_result is changed
-  tags: golang
 
 - name: prepare files
   file:
@@ -106,4 +100,3 @@
     - { dest: "/usr/local/bin/gofmt", mode: "0755", state: "link" }
     - { dest: "/usr/local/go/bin/go", mode: "0755" }
     - { dest: "/usr/local/go/bin/gofmt", mode: "0755" }
-  tags: golang
