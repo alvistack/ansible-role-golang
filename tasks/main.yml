@@ -73,7 +73,7 @@
 
 - name: unarchive package
   shell: |
-    set -o pipefail
+    set -euo pipefail
     rm -rf /usr/local/go \
       && mkdir -p /usr/local/go
     cd /usr/local/go
