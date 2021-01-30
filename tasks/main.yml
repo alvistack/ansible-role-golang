@@ -56,6 +56,7 @@
     - { dest: "/usr/local/bin" }
     - { dest: "/usr/local/go" }
     - { dest: "{{ golang_download.dest | dirname }}" }
+  register: file_result
 
 - name: download archive
   vars:
@@ -68,12 +69,14 @@
     timeout: 300
   loop:
     - "{{ golang_download }}"
+  when: file_result is changed
   register: get_url_result
   until: get_url_result is succeeded
 
 - name: unarchive package
   shell: |
     set -euo pipefail
+    exec &> >(tee -a {{ golang_download.dest }}.log)
     rm -rf /usr/local/go \
       && mkdir -p /usr/local/go
     cd /usr/local/go
@@ -86,7 +89,7 @@
     ln -fs /usr/local/go/bin/* .
   args:
     executable: "/bin/bash"
-  when: get_url_result is changed
+    creates: "{{ golang_download.dest }}.log"
 
 - name: prepare files
   file:
