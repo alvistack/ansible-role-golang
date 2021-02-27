@@ -20,3 +20,4 @@ _zypper:
   - { state: "latest", name: "glibc-devel" }
   - { state: "latest", name: "make" }
   - { state: "latest", name: "pkg-config" }
+  - { state: "latest", name: "tar" }
