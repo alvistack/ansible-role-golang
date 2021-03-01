@@ -20,4 +20,3 @@ _yum:
   - { state: "latest", name: "glibc-devel" }
   - { state: "latest", name: "make" }
   - { state: "latest", name: "pkgconfig" }
-  - { state: "latest", name: "tar" }
