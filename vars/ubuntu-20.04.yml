@@ -20,4 +20,3 @@ _apt:
   - { state: "latest", name: "libc6-dev" }
   - { state: "latest", name: "make" }
   - { state: "latest", name: "pkg-config" }
-  - { state: "latest", name: "tar" }
