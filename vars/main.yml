@@ -15,6 +15,10 @@
 # limitations under the License.
 
 _golang_download:
+  "1.16.2":
+    url: "https://dl.google.com/go/go1.16.2.linux-amd64.tar.gz"
+    dest: "/var/cache/ansible/542e936b19542e62679766194364f45141fde55169db2d8d01046555ca9eb4b8/go1.16.2.linux-amd64.tar.gz"
+    checksum: "sha256:542e936b19542e62679766194364f45141fde55169db2d8d01046555ca9eb4b8"
   "1.16.1":
     url: "https://dl.google.com/go/go1.16.1.linux-amd64.tar.gz"
     dest: "/var/cache/ansible/3edc22f8332231c3ba8be246f184b736b8d28f06ce24f08168d8ecf052549769/go1.16.1.linux-amd64.tar.gz"
@@ -23,6 +27,10 @@ _golang_download:
     url: "https://dl.google.com/go/go1.16.linux-amd64.tar.gz"
     dest: "/var/cache/ansible/013a489ebb3e24ef3d915abe5b94c3286c070dfe0818d5bca8108f1d6e8440d2/go1.16.linux-amd64.tar.gz"
     checksum: "sha256:013a489ebb3e24ef3d915abe5b94c3286c070dfe0818d5bca8108f1d6e8440d2"
+  "1.15.10":
+    url: "https://dl.google.com/go/go1.15.10.linux-amd64.tar.gz"
+    dest: "/var/cache/ansible/4aa1267517df32f2bf1cc3d55dfc27d0c6b2c2b0989449c96dd19273ccca051d/go1.15.10.linux-amd64.tar.gz"
+    checksum: "sha256:4aa1267517df32f2bf1cc3d55dfc27d0c6b2c2b0989449c96dd19273ccca051d"
   "1.15.9":
     url: "https://dl.google.com/go/go1.15.9.linux-amd64.tar.gz"
     dest: "/var/cache/ansible/a55f3e75bc1098045851d40ea74f9d77efc7958e9af85131a96ca387d38b1834/go1.15.9.linux-amd64.tar.gz"
@@ -31,7 +39,3 @@ _golang_download:
     url: "https://dl.google.com/go/go1.15.8.linux-amd64.tar.gz"
     dest: "/var/cache/ansible/d3379c32a90fdf9382166f8f48034c459a8cc433730bc9476d39d9082c94583b/go1.15.8.linux-amd64.tar.gz"
     checksum: "sha256:d3379c32a90fdf9382166f8f48034c459a8cc433730bc9476d39d9082c94583b"
-  "1.15.7":
-    url: "https://dl.google.com/go/go1.15.7.linux-amd64.tar.gz"
-    dest: "/var/cache/ansible/0d142143794721bb63ce6c8a6180c4062bcf8ef4715e7d6d6609f3a8282629b3/go1.15.7.linux-amd64.tar.gz"
-    checksum: "sha256:0d142143794721bb63ce6c8a6180c4062bcf8ef4715e7d6d6609f3a8282629b3"
