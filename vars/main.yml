@@ -15,6 +15,10 @@
 # limitations under the License.
 
 _golang_download:
+  "1.16.3":
+    url: "https://dl.google.com/go/go1.16.3.linux-amd64.tar.gz"
+    dest: "/var/cache/ansible/951a3c7c6ce4e56ad883f97d9db74d3d6d80d5fec77455c6ada6c1f7ac4776d2/go1.16.3.linux-amd64.tar.gz"
+    sha256sum: "951a3c7c6ce4e56ad883f97d9db74d3d6d80d5fec77455c6ada6c1f7ac4776d2"
   "1.16.2":
     url: "https://dl.google.com/go/go1.16.2.linux-amd64.tar.gz"
     dest: "/var/cache/ansible/542e936b19542e62679766194364f45141fde55169db2d8d01046555ca9eb4b8/go1.16.2.linux-amd64.tar.gz"
@@ -23,10 +27,10 @@ _golang_download:
     url: "https://dl.google.com/go/go1.16.1.linux-amd64.tar.gz"
     dest: "/var/cache/ansible/3edc22f8332231c3ba8be246f184b736b8d28f06ce24f08168d8ecf052549769/go1.16.1.linux-amd64.tar.gz"
     sha256sum: "3edc22f8332231c3ba8be246f184b736b8d28f06ce24f08168d8ecf052549769"
-  "1.16":
-    url: "https://dl.google.com/go/go1.16.linux-amd64.tar.gz"
-    dest: "/var/cache/ansible/013a489ebb3e24ef3d915abe5b94c3286c070dfe0818d5bca8108f1d6e8440d2/go1.16.linux-amd64.tar.gz"
-    sha256sum: "013a489ebb3e24ef3d915abe5b94c3286c070dfe0818d5bca8108f1d6e8440d2"
+  "1.15.11":
+    url: "https://dl.google.com/go/go1.15.11.linux-amd64.tar.gz"
+    dest: "/var/cache/ansible/8825b72d74b14e82b54ba3697813772eb94add3abf70f021b6bdebe193ed01ec/go1.15.11.linux-amd64.tar.gz"
+    sha256sum: "8825b72d74b14e82b54ba3697813772eb94add3abf70f021b6bdebe193ed01ec"
   "1.15.10":
     url: "https://dl.google.com/go/go1.15.10.linux-amd64.tar.gz"
     dest: "/var/cache/ansible/4aa1267517df32f2bf1cc3d55dfc27d0c6b2c2b0989449c96dd19273ccca051d/go1.15.10.linux-amd64.tar.gz"
@@ -35,7 +39,3 @@ _golang_download:
     url: "https://dl.google.com/go/go1.15.9.linux-amd64.tar.gz"
     dest: "/var/cache/ansible/a55f3e75bc1098045851d40ea74f9d77efc7958e9af85131a96ca387d38b1834/go1.15.9.linux-amd64.tar.gz"
     sha256sum: "a55f3e75bc1098045851d40ea74f9d77efc7958e9af85131a96ca387d38b1834"
-  "1.15.8":
-    url: "https://dl.google.com/go/go1.15.8.linux-amd64.tar.gz"
-    dest: "/var/cache/ansible/d3379c32a90fdf9382166f8f48034c459a8cc433730bc9476d39d9082c94583b/go1.15.8.linux-amd64.tar.gz"
-    sha256sum: "d3379c32a90fdf9382166f8f48034c459a8cc433730bc9476d39d9082c94583b"
