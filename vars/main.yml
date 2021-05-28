@@ -14,6 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_golang_version:
+  "1.16": "1.16.4"
+  "1.15": "1.15.12"
+
 _golang_download:
   "1.16.4":
     url: "https://dl.google.com/go/go1.16.4.linux-amd64.tar.gz"

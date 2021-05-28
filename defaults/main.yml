@@ -14,8 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Go release.
+golang_release: "1.16"
+
 # Go version.
-golang_version: "1.16.4"
+golang_version: "{{ _golang_version[golang_release] }}"
 
 # Go download details.
 golang_download: "{{ _golang_download[golang_version] }}"
