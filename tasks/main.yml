@@ -66,28 +66,28 @@
   
 - name: download archive
   shell: |
-    set -euo pipefail
+    set -euxo pipefail
+    mkdir -p /var/log/ansible
+    exec &> >(tee -a /var/log/ansible/{{ golang_download.checksum }}-get_url.log)
     TMP_DIR="$(mktemp -d)" \
       && cd $TMP_DIR \
-      && mkdir -p .{{ item.dest | dirname }} \
-      && curl -skL -m 300 {{ item.url }} > .{{ item.dest }} \
-      && echo -n "{{ item.checksum }} .{{ item.dest }}" | sha256sum -c - \
-      && mkdir -p {{ item.dest | dirname }} \
-      && mv .{{ item.dest }} {{ item.dest }} \
+      && mkdir -p .{{ golang_download.dest | dirname }} \
+      && curl -skL -m 300 {{ golang_download.url }} > .{{ golang_download.dest }} \
+      && echo -n "{{ golang_download.checksum }} .{{ golang_download.dest }}" | sha256sum -c - \
+      && mkdir -p {{ golang_download.dest | dirname }} \
+      && mv .{{ golang_download.dest }} {{ golang_download.dest }} \
       && rm -rf $TMP_DIR
   args:
     executable: "/bin/bash"
-    creates: "{{ item.dest | dirname }}"
-  loop:
-    - "{{ golang_download }}"
+    creates: "/var/log/ansible/{{ golang_download.checksum }}-get_url.log"
   register: result
   until: result is succeeded
 
 - name: unarchive package
   shell: |
-    set -euo pipefail
+    set -euxo pipefail
     mkdir -p /var/log/ansible
-    exec &> >(tee -a /var/log/ansible/{{ golang_download.checksum }}.log)
+    exec &> >(tee -a /var/log/ansible/{{ golang_download.checksum }}-unarchive.log)
     rm -rf /usr/local/go \
       && mkdir -p /usr/local/go
     cd /usr/local/go
@@ -100,7 +100,7 @@
     ln -fs /usr/local/go/bin/* .
   args:
     executable: "/bin/bash"
-    creates: "/var/log/ansible/{{ golang_download.checksum }}.log"
+    creates: "/var/log/ansible/{{ golang_download.checksum }}-unarchive.log"
 
 - name: prepare files
   file:
