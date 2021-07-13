@@ -15,10 +15,14 @@
 # limitations under the License.
 
 _golang_version:
-  "1.16": "1.16.5"
-  "1.15": "1.15.13"
+  "1.16": "1.16.6"
+  "1.15": "1.15.14"
 
 _golang_download:
+  "1.16.6":
+    url: "https://dl.google.com/go/go1.16.6.linux-amd64.tar.gz"
+    dest: "/var/cache/ansible/be333ef18b3016e9d7cb7b1ff1fdb0cac800ca0be4cf2290fe613b3d069dfe0d/go1.16.6.linux-amd64.tar.gz"
+    checksum: "be333ef18b3016e9d7cb7b1ff1fdb0cac800ca0be4cf2290fe613b3d069dfe0d"
   "1.16.5":
     url: "https://dl.google.com/go/go1.16.5.linux-amd64.tar.gz"
     dest: "/var/cache/ansible/b12c23023b68de22f74c0524f10b753e7b08b1504cb7e417eccebdd3fae49061/go1.16.5.linux-amd64.tar.gz"
@@ -27,10 +31,10 @@ _golang_download:
     url: "https://dl.google.com/go/go1.16.4.linux-amd64.tar.gz"
     dest: "/var/cache/ansible/7154e88f5a8047aad4b80ebace58a059e36e7e2e4eb3b383127a28c711b4ff59/go1.16.4.linux-amd64.tar.gz"
     checksum: "7154e88f5a8047aad4b80ebace58a059e36e7e2e4eb3b383127a28c711b4ff59"
-  "1.16.3":
-    url: "https://dl.google.com/go/go1.16.3.linux-amd64.tar.gz"
-    dest: "/var/cache/ansible/951a3c7c6ce4e56ad883f97d9db74d3d6d80d5fec77455c6ada6c1f7ac4776d2/go1.16.3.linux-amd64.tar.gz"
-    checksum: "951a3c7c6ce4e56ad883f97d9db74d3d6d80d5fec77455c6ada6c1f7ac4776d2"
+  "1.15.14":
+    url: "https://dl.google.com/go/go1.15.14.linux-amd64.tar.gz"
+    dest: "/var/cache/ansible/6f5410c113b803f437d7a1ee6f8f124100e536cc7361920f7e640fedf7add72d/go1.15.14.linux-amd64.tar.gz"
+    checksum: "6f5410c113b803f437d7a1ee6f8f124100e536cc7361920f7e640fedf7add72d"
   "1.15.13":
     url: "https://dl.google.com/go/go1.15.13.linux-amd64.tar.gz"
     dest: "/var/cache/ansible/3d3beec5fc66659018e09f40abb7274b10794229ba7c1e8bdb7d8ca77b656a13/go1.15.13.linux-amd64.tar.gz"
@@ -39,7 +43,3 @@ _golang_download:
     url: "https://dl.google.com/go/go1.15.12.linux-amd64.tar.gz"
     dest: "/var/cache/ansible/bbdb935699e0b24d90e2451346da76121b2412d30930eabcd80907c230d098b7/go1.15.12.linux-amd64.tar.gz"
     checksum: "bbdb935699e0b24d90e2451346da76121b2412d30930eabcd80907c230d098b7"
-  "1.15.11":
-    url: "https://dl.google.com/go/go1.15.11.linux-amd64.tar.gz"
-    dest: "/var/cache/ansible/8825b72d74b14e82b54ba3697813772eb94add3abf70f021b6bdebe193ed01ec/go1.15.11.linux-amd64.tar.gz"
-    checksum: "8825b72d74b14e82b54ba3697813772eb94add3abf70f021b6bdebe193ed01ec"
