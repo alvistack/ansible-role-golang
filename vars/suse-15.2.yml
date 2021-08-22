@@ -14,9 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_kube_release: "1.20"
+
+_zypper_repository:
+  - name: "home:alvistack"
+    repo: "http://download.opensuse.org/repositories/home:/alvistack/openSUSE_Leap_15.2"
+    state: "present"
+
 _zypper:
-  - { state: "latest", name: "gcc" }
-  - { state: "latest", name: "gcc-c++" }
-  - { state: "latest", name: "glibc-devel" }
-  - { state: "latest", name: "make" }
-  - { state: "latest", name: "pkg-config" }
+  - { state: "present", name: "golang-{{ golang_release }}-100:{{ golang_version }}" }

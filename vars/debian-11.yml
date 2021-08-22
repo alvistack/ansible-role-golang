@@ -14,9 +14,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_kube_release: "1.20"
+
+_apt_key:
+  - url: "http://download.opensuse.org/repositories/home:/alvistack/Debian_Testing/Release.key"
+    id: "789CFFDE0295B8A1F4E5690C4BECC97550D0B1FD"
+    state: "present"
+
+_apt_repository:
+  - repo: "deb http://download.opensuse.org/repositories/home:/alvistack/Debian_Testing /"
+    state: "present"
+
 _apt:
-  - { state: "latest", name: "g++" }
-  - { state: "latest", name: "gcc" }
-  - { state: "latest", name: "libc6-dev" }
-  - { state: "latest", name: "make" }
-  - { state: "latest", name: "pkg-config" }
+  - { state: "present", name: "golang-{{ golang_release }}=100:{{ golang_version }}*" }
