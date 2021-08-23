@@ -19,6 +19,3 @@ golang_release: "1.16"
 
 # Go version.
 golang_version: "{{ _golang_version[golang_release] }}"
-
-# Go download details.
-golang_download: "{{ _golang_download[golang_version] }}"
