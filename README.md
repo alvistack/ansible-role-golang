@@ -1,5 +1,7 @@
 # Ansible Role for Go
 
+<img src="/alvistack.svg" width="75" alt="AlviStack">
+
 [![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-golang/master)](https://gitlab.com/alvistack/ansible-role-golang/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-golang.svg)](https://github.com/alvistack/ansible-role-golang/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-golang.svg)](https://github.com/alvistack/ansible-role-golang/blob/master/LICENSE)
