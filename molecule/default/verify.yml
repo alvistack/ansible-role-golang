@@ -19,6 +19,6 @@
   become: true
   tasks:
     - name: go version
-      command: go version
+      ansible.builtin.command: go version
       register: result
       changed_when: result is not succeeded
