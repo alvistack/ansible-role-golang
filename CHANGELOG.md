@@ -4,6 +4,8 @@
 
 ### Major Changes
 
+-   Remove Go 1.17 support
+
 ## 7.1.0 - 2022-12-09
 
 ### Major Changes
