@@ -4,6 +4,9 @@
 
 ## 9.2.0 - 2024-01-31
 
+-   Remove Go 1.19 support
+-   Remove Go 1.21 support
+-   Support Go 1.22
 -   Support Ansible community package 9.2.0
 -   Remove Ubuntu 23.04 support
 
