@@ -15,6 +15,6 @@
 # limitations under the License.
 
 _golang_version:
-  "1.23": 1.23.2
+  "1.23": 1.23.3
   "1.20": 1.20.14
   "1.18": 1.18.10
