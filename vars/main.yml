@@ -1,6 +1,6 @@
 ---
 
-# Copyright 2025 Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
+# Copyright 2026 Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 # limitations under the License.
 
 _golang_version:
-  "1.25": 1.25.1
-  "1.24": 1.24.7
+  "1.25": 1.25.5
+  "1.24": 1.24.11
   "1.20": 1.20.14
   "1.18": 1.18.10
