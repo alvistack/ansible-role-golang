@@ -18,4 +18,4 @@
 golang_release: "1.26"
 
 # Go version.
-golang_version: "{{ _golang_version[golang_release] }}"
+golang_version: "{{ _golang_version }}"
