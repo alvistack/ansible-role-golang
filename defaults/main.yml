@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # Go release.
-golang_release: "1.26"
+golang_release: "1.27"
 
 # Go version.
 golang_version: "{{ _golang_version }}"
