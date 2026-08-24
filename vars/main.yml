@@ -16,7 +16,8 @@
 
 _golang_version: "{{ __golang_version[golang_release] }}"
 __golang_version:
-  "1.26": 1.26.4
+  "1.27": 1.27.0
+  "1.26": 1.26.7
   "1.24": 1.24.13
   "1.22": 1.22.12
   "1.20": 1.20.14
